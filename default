@@ -15,7 +15,7 @@ server {
         ssl_certificate_key /ssl/serverKey.pem;
 	location / {
 		# Replace url with forwarding url.
-        	proxy_pass http://172.17.0.4:8888;
+        	proxy_pass http://172.17.1.101:8888;
         	proxy_http_version 1.1;
         	proxy_set_header Upgrade $http_upgrade;
         	proxy_set_header Connection $http_connection;
